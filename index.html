@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miles Per Gallon Calculator</title>
+    <link rel="stylesheet" href="mpg.css" />
+  </head>
+  <body>
+    <main>
+      <h1>The Total cost</h1>
+      <script>
+        "use strict";
+
+        // get the cost of your dinner
+        const dinner = parseInt(prompt("The cost of your Dinner"));
+
+        // get how much tips you wanna add
+        const Tips = parseInt(prompt("Enter tips percentage"));
+
+          // calculate the total
+          const total = parseFloat(dinner+(Tips*dinner/100));
+
+        // display results
+
+        //try to place const html before miles - note the error.
+
+          const html = `<p><label>your dinner cost: </label>${dinner}</p>
+
+                <p><label>Tips: </label>${Tips}</p>
+                <p><label>Total: </label>${total.toFixed(2)}</p>`;
+
+        document.write(html);
+
+        console.log(dinner);
+      </script>
+    </main>
+  </body>
+</html>
